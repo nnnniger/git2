@@ -24,7 +24,7 @@ class CircleWidget(QWidget):
         self.addButton.clicked.connect(self.addCircle)
         self.layout.addWidget(self.addButton)
 
-    def addCircle(self):
+    def newCircle(self):
         diameter = random.randint(10, 100)
         x = random.randint(0, self.width() - diameter)
         y = random.randint(0, self.height() - diameter)
